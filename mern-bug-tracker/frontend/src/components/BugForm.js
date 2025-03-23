@@ -17,9 +17,8 @@ const BugForm = () => {
       <input
         type="text"
         placeholder="Title"
-        value={bug.title}
+        value={bug.title} required
         onChange={(e) => setBug({ ...bug, title: e.target.value })}
-        required
       />
       <textarea
         placeholder="Description"
